@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background for modern feel */
+    color: #e1e1e1; /* Light grey text for contrast */
+}
+
+/* Home Page Styles */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #212121, #121212); /* Dark gradient */
+}
+
+.home-card {
+    text-align: center;
+    background-color: #1e1e1e; /* Slightly lighter grey card background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deep shadow for card */
+    width: 100%;
+    max-width: 480px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-card h1 {
+    font-size: 36px;
+    color: #ffffff; /* Clean white for headings */
+    margin-bottom: 20px;
+}
+
+.home-card p {
+    font-size: 18px;
+    color: #b0b0b0; /* Softer grey for description */
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient for button */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(38, 38, 38, 0.3); /* Light shadow effect */
+}
+
+/* Task Item Animation */
+.task-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.task-item.added {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Task Deletion Animation */
+.task-item.deleted {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Login and Register Page Styles */
+.login-container,
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #212121, #121212); /* Dark gradient */
+}
+
+.login-card,
+.register-card {
+    background-color: #1f1f1f; /* Dark grey card */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Deep shadow */
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.login-card h2,
+.register-card h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #222;
+    color: #ddd;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #6a11cb; /* Modern purple focus effect */
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.5); /* Soft purple focus shadow */
+}
+
+.input-group input.invalid {
+    border-color: red;
+    background-color: #f8d7da;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb);
+    transform: scale(1.1);
+}
+
+.btn:active {
+    transform: scale(1);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.signup-link a {
+    color: #6a11cb; /* Bright purple link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .login-card,
+    .register-card {
+        padding: 20px;
+    }
+
+    .login-card h2,
+    .register-card h2 {
+        font-size: 26px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .task-item {
+        font-size: 14px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
