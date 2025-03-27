@@ -33,7 +33,7 @@ Database: MySQL
 Installation Guide
 -------------
 1. Clone the repository:
-   git clone https://github.com/your-username/task-manager-app.git
+   git clone https://github.com/Kaushalyajayasekare6/TODO_app
 2. Set up a local server (e.g., XAMPP, WAMP, or MAMP) to run PHP and MySQL.
 3. Create a MySQL database named task_manager and import the SQL file provided in the project.
 4. Update the db.php file with your MySQL connection details.
