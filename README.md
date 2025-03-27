@@ -50,7 +50,3 @@ How to Use the App
 About the Developer
 -------------
 This project was created by Kaushalya Jayasekara, a passionate software engineering student dedicated to building clean, user-friendly web applications. Kaushalya believes in creating tech that makes life easier and helps people be more productive.
-
-License
--------------
-This project is licensed under the MIT License. See the LICENSE file for more details.
